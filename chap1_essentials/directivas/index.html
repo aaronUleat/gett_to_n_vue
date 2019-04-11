@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Directivas</title>
+</head>
+<body>
+<div class="container">
+    <main>
+        <h1 v-if="conectado"> Si pasamos v-if</h1>
+        <h1 v-show="siesta"> Si pasamos v-show</h1>
+
+        <h3 v-if="edad < 18"> No puedes Entrar</h3>
+        <h3 v-else-if="edad > 200"> Eres inmortal</h3>
+        <h3 v-else> Puedes entrar </h3>
+        <template v-if="conectado">
+            <h3>Bienvenido</h3>
+            <ul>
+                <li>
+                    <a href="#">test1</a>
+                    <a href="#">test2</a>
+                    <a href="#">test3</a>
+                    <a href="#">test4</a>
+                    <a href="#">test5</a>
+                    <a href="#">tst6</a></li>
+            </ul>
+        </template>
+    </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
+<script src="mian.js"></script>
+</body>
+</html>
