@@ -69,7 +69,7 @@ Precaución Solo represente el HTML que usted y su organización confían en su 
 Nunca renderice el HTML que proporcionan los usuarios. El uso de HTML no confiable puede llevar a
 Vulnerabilidades del script del sitio.
 
-En el Listado 2-14, tenemos una propiedad de datos llamada someHTML que es una cadena de <h1>
+En el Listado 2-14, tenemos una propiedad de datos llamada someHTML que es una cadena de `<h1>`
 Elemento, que contiene estilos para el color y el color de fondo del elemento.
 Como queremos que esto se muestre en nuestra aplicación, lo vinculamos con la directiva v-html para que
 se trata como HTML y no como una cadena. A modo de comparación, también intentaremos atar nuestros
